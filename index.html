@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link type="text/css" rel="stylesheet" href="styles.css" />
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     </head>
 
     <body>
@@ -36,27 +39,35 @@
                     <main class="contenedor">
                         <section>
                             <div class='titulo'>
-
-                                <h1 id="h1_section_2" class="section__h1">Web Developer</h1>
+                                <div class="transicion">
+                                    <h1 id="h1_section_2" class="section__h1">Web Developer</h1>
+                                </div>
+                                
                             </div>
 
                             <div class='contenido'>
                                 <h2 class="section__h2">Jesus Salas Castillo</h2>
 
-                                <p>¡Hola! Yo soy Jesus</p>
-
-                                <p class="main__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint mollitia unde expedita dolores. Quibusdam repellat beatae ex harum, molestiae dolor sed magnam
+                                <p class="">¡Hola! Yo soy Jesus</p>
+                                
+                                <div data-aos="fade-right">
+                                    <p class="main__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint mollitia unde expedita dolores. Quibusdam repellat beatae ex harum, molestiae dolor sed magnam
                                     deleniti, tempore voluptates impedit, sapiente quasi iure eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore perferendis nulla, at doloremque soluta deleniti dolorum molestiae enim provident recusandae
-                                    illo quibusdam autem eius laborum eaque rem nihil architecto officiis.
+                                    illo quibusdam autem eius laborum eaque rem nihil architecto officiis.  
 
                                 </p>
+
+                                    
+                                </div>
+
+                                
 
                                 <form action="./archivos/Cv - Jesus Salas Castillo.pdf">
                                     <input type="submit" value="Descargar CV"/>
                                 </form>
                             </div>
 
-
+                            
                             <img class='img' src="./img/developer-activity-animate.svg" alt="Imagen tecnológica"/>
                             <!--div class="my_description">
                                 <div-->
@@ -67,28 +78,39 @@
                         <div id="portafolio">
                             <ul>
                                 <li>
-                                    <img src="./img/cafe01.jpg" alt="">
+                                    <img class="transicion__img" src="./img/cafe01.jpg" alt="">
 
+                                    <div data-aos="fade-down-right">
                                     <form action="https://www.facebook.com/">
-                                        <input type="submit" value="Ir al sitio web"/>
+                                    <input type="submit" value="Ir al sitio web"/>
                                     </form>
+                                    </div>
+                                    
 
                                 </li>
 
                                 <li>
-                                    <img src="./img/cafe02.jpg" alt="">
+                                    <img class="transicion__img" src="./img/cafe02.jpg" alt="">
 
-                                    <form action="https://www.facebook.com/">
-                                        <input type="submit" value="Ir al sitio web"/>
-                                    </form>
+                                    <div data-aos="flip-left">
+                                        <form action="https://www.facebook.com/">
+                                            <input type="submit" value="Ir al sitio web"/>
+                                        </form>
+                                    </div>
+                                    
+                                    
                                 </li>
 
                                 <li>
-                                    <img src="./img/cafe03.jpg" alt="">
+                                    <img class="transicion__img" src="./img/cafe03.jpg" alt="">
 
-                                    <form action="https://www.facebook.com/">
+                                    <div data-aos="fade-down-left">
+                                      <form action="https://www.facebook.com/">
                                         <input type="submit" value="Ir al sitio web"/>
-                                    </form>
+                                    </form>                                     
+                                    </div>
+                                    
+                                    
                                 </li>
                             </ul>
                         </div>
@@ -118,5 +140,12 @@
                 </footer>
             </div>
         </div>
+    
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     </body>
 </html>
